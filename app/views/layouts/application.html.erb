@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Oddbins</title>
+    <title>Odd bins Wine Shop</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="main-box">
+      <div class="header">
+        <div class="transbox">
+          <h1>Odd Bins Wine Shop</h1>
+          <h3><i>Fine Wine Merchants Since 1960</i></h3>
+        </div>
+      </div>
+      <div class="display">
+        
+        <%= yield %>
+        
+      </div>
+        
+    </div>
   </body>
 </html>
