@@ -1,0 +1,12 @@
+<h2>Add a wine to the list</h2>
+
+<div class="wine-form">
+  <%= simple_form_for @wine do |f| %>
+    <%= f.input :name, input_html: { class: 'wine-field' } %>
+    <%= f.input :producer, input_html: { class: 'wine-field' } %>
+    <%= f.input :year, input_html: { class: 'wine-field' } %>
+    <%= f.input :grapes, input_html: { class: 'wine-field' } %>
+    <%= f.input :description, input_html: { class: 'wine-field' } %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
